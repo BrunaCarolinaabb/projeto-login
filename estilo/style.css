@@ -7,8 +7,9 @@
     box-sizing: border-box;
 }
 
-body, html {
-    background-image: linear-gradient(to top,  rgb(5, 40, 54),  rgba(200, 75, 17, 0.698));
+body,
+html {
+    background-image: linear-gradient(to top, rgb(5, 40, 54), rgba(200, 75, 17, 0.698));
     height: 100vh;
     width: 100vw;
 }
@@ -16,35 +17,45 @@ body, html {
 main {
     position: relative;
     height: 100vh;
-  width: 100vw;
+    width: 100vw;
 }
 
 #login {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,  -50%);
-    overflow:hidden ; /*tudo que esta fora da borda fica escondido*/
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    /*tudo que esta fora da borda fica escondido*/
 
     background-color: white;
     width: 250px;
     height: 500px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450) ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
     transition: width .3s, height .3s;
-    transition-timing-function: ease; /*suaviza a transição*/
+    transition-timing-function: ease;
+    /*suaviza a transição*/
 
 }
 
 #imagem {
     display: block;
     background: #5f2c82 url(../imagens/predioescuro.jpg);
-    background-size:cover;
+    background-size: cover;
     height: 200px;
 }
 
 #formulario {
     display: block;
-padding: 10px ;
+    padding: 10px;
+}
+
+#formulario >h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#formulario >p {
+    font-size: 0.8em;
 }
